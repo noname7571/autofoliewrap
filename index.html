@@ -2,546 +2,1024 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autofoliewrap.cz – Autofólie, tónování autoskel, tónování světel, převleky aut</title>
-  <meta name="description" content="Profesionální polepy karoserií a tónování oken v Praze. Celopolepy automobilů, PPF fólie, reklamní polepy, ochrana laku. Jsme s vámi od roku 2009." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autofólie a tónování autoskel Praha | Autofoliewrap.cz</title>
+  <meta name="description" content="Celopolepy, PPF ochrana laku, tónování autoskel a světel v Praze. Fólie 3M, Hexis, Avery Dennison. Spočítejte si cenu online a objednejte se ještě dnes." />
+  <link rel="canonical" href="https://www.autofoliewrap.cz/" />
+  <meta name="theme-color" content="#0e1418" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:site_name" content="Autofoliewrap.cz" />
+  <meta property="og:title" content="Autofólie a tónování autoskel Praha | Autofoliewrap.cz" />
+  <meta property="og:description" content="Celopolepy, PPF ochrana laku a tónování autoskel v Praze. Spočítejte si cenu online." />
+  <meta property="og:url" content="https://www.autofoliewrap.cz/" />
+  <meta property="og:image" content="https://www.autofoliewrap.cz/assets/frames/car_1.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>" />
+  <!-- Hero image is the LCP element — fetch it as early as possible -->
+  <link rel="preload" as="image" href="assets/frames/car_1.webp" fetchpriority="high" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Structured data: local business + services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "Autofoliewrap.cz",
+    "description": "Profesionální polepy karoserií, PPF ochrana laku a tónování autoskel a světel v Praze.",
+    "url": "https://www.autofoliewrap.cz/",
+    "email": "info@autofoliewrap.cz",
+    "telephone": "+420777599995",
+    "foundingDate": "2013",
+    "priceRange": "$$",
+    "areaServed": { "@type": "City", "name": "Praha" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Praha",
+      "addressCountry": "CZ"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/Autofoliewrapcz",
+      "https://www.instagram.com/autofolie.wrap.praha/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Služby",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tónování autoskel a světel" }, "priceCurrency": "CZK", "price": "3500" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Celopolep automobilu" }, "priceCurrency": "CZK", "price": "18000" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PPF ochranná fólie" }, "priceCurrency": "CZK", "price": "8000" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reklamní polep vozu" }, "priceCurrency": "CZK", "price": "4500" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Jak dlouho realizace trvá?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tónování skel zvládneme během jednoho dne. Celopolep obvykle trvá 3 až 5 pracovních dnů, PPF na přední partie 1 až 2 dny. Přesný termín potvrdíme při objednávce." } },
+      { "@type": "Question", "name": "Poškodí fólie lak vozu?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ne. Kvalitní fólie lak naopak chrání před kamínky, UV zářením a drobnými škrábanci. Při odborné aplikaci i sejmutí zůstane originální lak nedotčený." } },
+      { "@type": "Question", "name": "Jde fólie později sundat?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ano. Fólie je plně odstranitelná. Sejmutí provádíme řízeným nahřátím, aby na laku nezůstala lepidla ani stopy." } },
+      { "@type": "Question", "name": "Můžu s polepeným autem do myčky?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ano, doporučujeme ale ruční mytí nebo bezkontaktní myčku. Kartáčovým myčkám se u matných a saténových fólií raději vyhněte." } },
+      { "@type": "Question", "name": "Je tónování autoskel legální?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ano. Skla za B sloupkem lze tónovat bez omezení. Přední boční skla a čelní sklo podléhají limitům propustnosti světla — poradíme vám s variantou, která projde technickou kontrolou." } },
+      { "@type": "Question", "name": "Jakou dáváte záruku?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Na práci i materiál poskytujeme záruku podle typu fólie: u celopolepů až 5 let, u PPF fólií až 10 let." } }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- ===== HEADER / NAV ===== -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#" class="logo">Autofolie<span>wrap</span>.cz</a>
-      <nav class="nav" id="nav">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <!-- ===== ICON SPRITE (decorative, hidden) ===== -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.48 3.5a.56.56 0 0 1 1.04 0l2.13 4.31 4.76.69a.56.56 0 0 1 .31.96l-3.44 3.35.81 4.74a.56.56 0 0 1-.81.59L12 15.9l-4.26 2.24a.56.56 0 0 1-.81-.59l.81-4.74-3.44-3.35a.56.56 0 0 1 .31-.96l4.76-.69Z" fill="currentColor" stroke="none"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+      <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3Z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+      <symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol>
+      <symbol id="i-calculator" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01"/><path d="M12 11h.01"/><path d="M16 11h.01"/><path d="M8 15h.01"/><path d="M12 15h.01"/><path d="M16 15h.01"/><path d="M8 19h4"/><path d="M16 19h.01"/></symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1.5a.5.5 0 0 1 .5.5V15a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2Z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1.5a.5.5 0 0 1 .5.5V15a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2Z"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.81.83-3.03-.2-.31a8.14 8.14 0 0 1-1.25-4.35c0-4.55 3.7-8.26 8.26-8.26a8.2 8.2 0 0 1 8.24 8.27c0 4.55-3.7 8.2-8.27 8.2Zm4.52-6.15c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.19-.53.06-.25-.12-1.05-.38-1.99-1.23-.74-.65-1.23-1.46-1.38-1.71-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.09-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.02 2.57c.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18 8.09 4.05a1 1 0 0 1 0 1.79l-8.09 4.04a2 2 0 0 1-1.66 0L3.08 8.02a1 1 0 0 1 0-1.79l8.09-4.05a2 2 0 0 1 1.66 0Z"/><path d="m3.08 12.01 8.1 4.04a2 2 0 0 0 1.66 0l8.09-4.04"/><path d="m3.08 16.99 8.1 4.05a2 2 0 0 0 1.66 0l8.09-4.05"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="header">
+    <div class="wrap site-header__inner">
+      <a href="#top" class="logo" aria-label="Autofoliewrap.cz — domů">
+        <span class="logo__mark" aria-hidden="true"><svg><use href="#i-layers"></use></svg></span>
+        <span class="logo__text">Autofolie<b>wrap</b><i>.cz</i></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hlavní">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link active">Domů</a></li>
-          <li><a href="#sluzby" class="nav__link">Služby</a></li>
-          <li><a href="#cenik" class="nav__link">Ceník</a></li>
-          <li><a href="#galerie" class="nav__link">Galerie</a></li>
-          <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
+          <li><a class="nav__link" href="#sluzby">Služby</a></li>
+          <li><a class="nav__link" href="#kalkulacka">Kalkulačka</a></li>
+          <li><a class="nav__link" href="#folie">Fólie</a></li>
+          <li><a class="nav__link" href="#galerie">Galerie</a></li>
+          <li><a class="nav__link" href="#cenik">Ceník</a></li>
+          <li><a class="nav__link" href="#faq">Časté dotazy</a></li>
         </ul>
-        <div class="nav__social">
-          <a href="https://www.facebook.com/Autofoliewrapcz" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/autofolie.wrap.praha/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="nav__actions">
+          <a class="btn btn--ghost btn--sm" href="tel:+420777599995">
+            <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+            777 599 995
+          </a>
+          <a class="btn btn--primary btn--sm" href="#kontakt">Nezávazná poptávka</a>
         </div>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
+
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav">
+        <svg class="burger__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+        <svg class="burger__close" aria-hidden="true"><use href="#i-close"></use></svg>
+        <span class="visually-hidden">Menu</span>
       </button>
     </div>
   </header>
+  <div class="nav-scrim" id="navScrim" hidden></div>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero__bg"></div>
-    <div class="container hero__inner">
-      <h1 class="hero__title">
-        <span class="hero__title-line">dejte</span>
-        <span class="hero__title-line">svému autu</span>
-        <span class="hero__title-accent">nový design</span>
-      </h1>
-      <div class="hero__boxes">
-        <a href="#celopolepy" class="hero__box">
-          <div class="hero__box-icon"><i class="fas fa-car-side"></i></div>
-          <h3>Celopolepy<br />automobilů</h3>
-        </a>
-        <a href="#ppf" class="hero__box hero__box--highlight">
-          <div class="hero__box-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>PPF fólie<br />ochranná fólie</h3>
-          <span class="hero__box-sub">neviditelný štít PPF</span>
-          <span class="hero__box-sub">ochrana laku Carshield</span>
-        </a>
-        <a href="#tonovani" class="hero__box">
-          <div class="hero__box-icon"><i class="fas fa-sun"></i></div>
-          <h3>AKCE tónování<br />autoskel &amp; světel</h3>
-          <span class="hero__box-sub">design i ochrana</span>
-        </a>
-      </div>
-    </div>
-  </section>
+  <main id="obsah" tabindex="-1">
+    <span id="top"></span>
 
-  <!-- ===== CAR WRAPPING SCROLL EFFECT (Canvas + GSAP) ===== -->
-  <section class="scroll-section" id="scrollEffect">
-    <!-- Loading overlay: blocks interaction until frames are ready -->
-    <div class="scroll-loading" id="scrollLoading">
-      <div class="scroll-loading__inner">
-        <div class="scroll-loading__ring"></div>
-        <div class="scroll-loading__text">
-          <span class="scroll-loading__label">Načítání</span>
-          <span class="scroll-loading__percent" id="loadingPercent">0%</span>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <img class="hero__photo" src="assets/frames/car_1.webp" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" />
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <div class="hero__inner">
+        <p class="eyebrow">Praha · autofólie od roku 2013</p>
+        <h1 class="hero__title">Dejte svému autu<br /><span class="grad">nový design</span></h1>
+        <p class="hero__lead">
+          Celopolepy, neviditelná PPF ochrana laku a tónování autoskel.
+          Pracujeme jen s prověřenými fóliemi 3M, Hexis a Avery Dennison —
+          a každý vůz vracíme tak, jak bychom chtěli vrátit ten svůj.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#kalkulacka">
+            <svg aria-hidden="true"><use href="#i-calculator"></use></svg>
+            Spočítat cenu za minutu
+          </a>
+          <a class="btn btn--glass btn--lg" href="tel:+420777599995">
+            <svg aria-hidden="true"><use href="#i-phone"></use></svg>
+            +420 777 599 995
+          </a>
         </div>
-        <div class="scroll-loading__bar">
-          <div class="scroll-loading__bar-fill" id="loadingBarFill"></div>
+
+        <ul class="hero__trust" role="list">
+            <li><svg aria-hidden="true"><use href="#i-award"></use></svg> 12+ let na trhu</li>
+            <li><svg aria-hidden="true"><use href="#i-shield"></use></svg> Záruka až 10 let</li>
+            <li><svg aria-hidden="true"><use href="#i-layers"></use></svg> Certifikované fólie</li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- Scroll spacer to create scroll distance -->
-    <div class="scroll-container" id="scrollContainer">
-      <!-- Sticky frame keeps the canvas pinned in viewport -->
-      <div class="scroll-frame" id="scrollFrame">
-        <canvas id="scrollCanvas"></canvas>
+      <a class="hero__scroll" href="#sluzby" aria-label="Přejít na služby">
+        <span class="hero__scroll-dot" aria-hidden="true"></span>
+      </a>
+    </section>
 
-        <!-- Overlay text that fades based on scroll progress -->
-        <div class="scroll-overlay" id="scrollOverlay">
-          <div class="scroll-overlay__content">
-            <span class="scroll-overlay__pre">sledujte proměnu</span>
-            <h2 class="scroll-overlay__title">Každý detail<br /><span>se počítá</span></h2>
-            <p class="scroll-overlay__desc">
-              Profesionální aplikace fólie vyžaduje preciznost, zkušenosti a vášeň.<br />
-              Podívejte se, jak vzniká dokonalý celopolep.
+    <!-- ===== BRAND STRIP ===== -->
+    <section class="brands" aria-label="Značky fólií, se kterými pracujeme">
+      <div class="wrap brands__inner">
+        <p class="brands__label">Pracujeme s fóliemi</p>
+        <ul class="brands__list" role="list">
+          <li>3M</li><li>Hexis</li><li>Avery Dennison</li><li>Oracal</li><li>KPMF</li><li>SunTek</li><li>Fusion</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SLUŽBY ===== -->
+    <section class="section" id="sluzby">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Co pro vás uděláme</p>
+          <h2 class="section__title">Čtyři služby, jedna dílna</h2>
+          <p class="section__lead">Vyberte si, co váš vůz potřebuje. U každé služby najdete orientační cenu — přesnou spočítáme podle typu vozidla.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal" id="tonovani">
+            <span class="card__icon"><svg aria-hidden="true"><use href="#i-sun"></use></svg></span>
+            <h3 class="card__title">Tónování autoskel a světel</h3>
+            <p class="card__text">Soukromí, chladnější interiér a o poznání elegantnější vůz. Fólie blokuje až 99 % UV záření a snižuje oslnění při řízení.</p>
+            <ul class="card__list" role="list">
+              <li>Hotovo během jednoho dne</li>
+              <li>Odstíny podle limitů technické kontroly</li>
+            </ul>
+            <p class="card__price">od 3 500 Kč</p>
+            <a class="card__link" href="#kalkulacka">Spočítat cenu <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          </article>
+
+          <article class="card reveal" id="celopolepy">
+            <span class="card__icon"><svg aria-hidden="true"><use href="#i-car"></use></svg></span>
+            <h3 class="card__title">Celopolepy automobilů</h3>
+            <p class="card__text">Změna barvy bez nevratného laku. Matná, saténová, metalická nebo chromová fólie — a kdykoli později zase zpátky do originálu.</p>
+            <ul class="card__list" role="list">
+              <li>Nesnižuje hodnotu vozu</li>
+              <li>Zároveň chrání původní lak</li>
+            </ul>
+            <p class="card__price">od 18 000 Kč</p>
+            <a class="card__link" href="#kalkulacka">Spočítat cenu <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          </article>
+
+          <article class="card reveal" id="ppf">
+            <span class="card__icon"><svg aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <h3 class="card__title">PPF — ochrana laku</h3>
+            <p class="card__text">Průhledný polyuretanový štít proti kamínkům, ptačímu trusu a škrábancům. Drobné rýhy se na slunci samy zacelí.</p>
+            <ul class="card__list" role="list">
+              <li>Samouzdravovací technologie</li>
+              <li>Životnost až 10 let</li>
+            </ul>
+            <p class="card__price">od 8 000 Kč</p>
+            <a class="card__link" href="#kalkulacka">Spočítat cenu <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          </article>
+
+          <article class="card reveal" id="reklama">
+            <span class="card__icon"><svg aria-hidden="true"><use href="#i-megaphone"></use></svg></span>
+            <h3 class="card__title">Reklamní polepy</h3>
+            <p class="card__text">Od grafického návrhu po realizaci. Jedno auto i celá flotila — reklama, která jezdí po městě místo vás.</p>
+            <ul class="card__list" role="list">
+              <li>Grafický návrh v ceně</li>
+              <li>Firemní flotily se slevou</li>
+            </ul>
+            <p class="card__price">od 4 500 Kč</p>
+            <a class="card__link" href="#kalkulacka">Spočítat cenu <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCROLL STORY (canvas frame sequence) ===== -->
+    <section class="story" id="promena" aria-labelledby="storyTitle">
+      <div class="story__track" id="storyTrack">
+        <div class="story__stage">
+          <canvas id="storyCanvas" aria-hidden="true"></canvas>
+          <noscript><img src="assets/frames/car_30.webp" alt="Technik pracuje na demontáži dílů vozu v dílně" width="1920" height="1080" /></noscript>
+
+          <div class="story__copy">
+            <p class="eyebrow eyebrow--light">Sledujte proměnu</p>
+            <h2 class="story__title" id="storyTitle">Každý detail<br /><span class="grad">se počítá</span></h2>
+            <p class="story__lead">
+              Než přijde fólie, přijde příprava. Demontáž dílů, odmaštění, každá hrana zvlášť.
+              Právě proto výsledek vydrží roky a ne měsíce.
             </p>
-            <div class="scroll-overlay__progress" id="scrollProgress">
-              <span class="scroll-overlay__pct" id="scrollPct">0%</span>
-              <span class="scroll-overlay__hint">Protáhněte</span>
-            </div>
+            <p class="story__hint"><span id="storyPct">0 %</span> · rolujte dál</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== SLUŽBY ===== -->
-  <section class="services section" id="sluzby">
-    <div class="container">
-      <h2 class="section__title">Naše služby</h2>
-      <p class="section__subtitle">Profesionální polepy a tónování v Praze</p>
-      <div class="services__grid">
-        <!-- Tónování -->
-        <div class="service-card" id="tonovani">
-          <div class="service-card__icon"><i class="fas fa-moon"></i></div>
-          <h3 class="service-card__title">Tónování<br /><span>autoskel a světel</span></h3>
-          <p class="service-card__text">
-            Kromě zvýšení elegance vozu poskytují tónovaná skla ochranu před UV zářením, redukují letní přehřívání interiéru vozu, poskytují soukromí, snižují riziko vykradení vozu a zvyšují pohodlí a koncentraci řidiče.
-          </p>
-          <a href="#" class="service-card__link">detailní info <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <!-- Celopolepy -->
-        <div class="service-card" id="celopolepy">
-          <div class="service-card__icon"><i class="fas fa-car"></i></div>
-          <h3 class="service-card__title">Celopolepy<br /><span>automobilů</span></h3>
-          <p class="service-card__text">
-            Chcete změnit vzhled Vašeho vozu nebo ochránit lak před poškozením od povětrnostních vlivů? Polep na auto je perfektním řešením pro obě varianty. Dejte svému vozu jedinečnou tvář a vystupte z davu.
-          </p>
-          <a href="#" class="service-card__link">detailní info <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <!-- Reklamní polepy -->
-        <div class="service-card">
-          <div class="service-card__icon"><i class="fas fa-bullhorn"></i></div>
-          <h3 class="service-card__title">Reklamní<br /><span>polepy</span></h3>
-          <p class="service-card__text">
-            Tvoříme reklamní polepy na míru. Od návrhu až po realizaci. Reklama na autě je způsob, jak efektivně oslovit nové zákazníky. Využijte sílu reklamy na autě a nechte na nás, abychom vám auto polepili přesně podle vašich představ.
-          </p>
-          <a href="#" class="service-card__link">Detailní info <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <!-- Ochrana laku -->
-        <div class="service-card" id="ppf">
-          <div class="service-card__icon"><i class="fas fa-shield-virus"></i></div>
-          <h3 class="service-card__title">Ochrana<br /><span>laku</span></h3>
-          <p class="service-card__text">
-            Milujete své auto? Chraňte jej před povětrnostními vlivy, kamínky, škrábanci a každodenním opotřebením! Speciální fólie CarShield ochrání váš vůz jako neviditelný štít. Vyniká dlouhou životností, maximální čirostí a výjimečnou odolností.
-          </p>
-          <a href="#" class="service-card__link">Detailní info <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- ===== KALKULAČKA ===== -->
+    <section class="section section--tint" id="kalkulacka">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Bez telefonátu, bez čekání</p>
+          <h2 class="section__title">Orientační kalkulačka ceny</h2>
+          <p class="section__lead">Nastavte, co potřebujete, a hned uvidíte cenové rozpětí. Odhad je nezávazný — finální nabídku potvrdíme po prohlídce vozu.</p>
+        </header>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="about section">
-    <div class="container">
-      <div class="about__inner">
-        <div class="about__content">
-          <h2 class="section__title section__title--left">Kdo jsme?</h2>
-          <p class="section__subtitle section__subtitle--left">něco málo o nás</p>
-          <h3 class="about__brand">Autofoliewrap.cz</h3>
-          <p>
-            Naše firma se už od roku 2013 věnuje profesionálním polepům karoserií a tónování oken. Používáme jen prověřené značky fólií. Pro tónování oken jsou to fólie značky Suntek řady-HP a Fusion řady-HP. Celopolepy automobilů nebo jen částečné polepy jsou realizovány fóliemi značek 3M, Hexis, Avery Dennison, Oracal, KPMF se kterými máme mnoholeté a především výborné zkušenosti.
-          </p>
-          <p>
-            Zaměřujeme se jak na tónování skel, tak i na tónování světel. Polepujeme celé karoserie, nebo i jen nějaké části vozu včetně bezpečnostních či reklamních polepů.
-          </p>
-          <p>
-            Již od počátku klademe důraz na maximální kvalitu, individuální přístup a spokojenost zákazníka. Každá zakázka je pro nás výzvou a každý vůz je pro nás originál, který si zaslouží tu nejlepší péči.
-          </p>
-        </div>
-        <div class="about__brands">
-          <h4>Používané značky fólií</h4>
-          <div class="about__brands-list">
-            <span>3M</span>
-            <span>Hexis</span>
-            <span>Avery Dennison</span>
-            <span>Oracal</span>
-            <span>KPMF</span>
-            <span>Suntek</span>
-            <span>Fusion</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="calc">
+          <form class="calc__form" id="calcForm" novalidate>
+            <fieldset class="calc__group">
+              <legend class="calc__legend">1. Jakou službu chcete?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="service" value="tint" checked /><span><svg aria-hidden="true"><use href="#i-sun"></use></svg>Tónování skel</span></label>
+                <label class="chip"><input type="radio" name="service" value="wrap" /><span><svg aria-hidden="true"><use href="#i-car"></use></svg>Celopolep</span></label>
+                <label class="chip"><input type="radio" name="service" value="ppfFront" /><span><svg aria-hidden="true"><use href="#i-shield"></use></svg>PPF — přední partie</span></label>
+                <label class="chip"><input type="radio" name="service" value="ppfFull" /><span><svg aria-hidden="true"><use href="#i-shield"></use></svg>PPF — celý vůz</span></label>
+                <label class="chip"><input type="radio" name="service" value="ad" /><span><svg aria-hidden="true"><use href="#i-megaphone"></use></svg>Reklamní polep</span></label>
+              </div>
+            </fieldset>
 
-  <!-- ===== PROCESS ===== -->
-  <section class="process section">
-    <div class="container">
-      <h2 class="section__title">Jak to probíhá</h2>
-      <p class="section__subtitle">od návrhu až k realizaci</p>
-      <div class="process__steps">
-        <div class="process__step">
-          <div class="process__step-num">01</div>
-          <div class="process__step-icon"><i class="fas fa-calendar-check"></i></div>
-          <h3>Objednejte se</h3>
-          <p>online nebo telefonicky</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">02</div>
-          <div class="process__step-icon"><i class="fas fa-comments"></i></div>
-          <h3>Poradíme</h3>
-          <p>a vytvoříme objednávku</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">03</div>
-          <div class="process__step-icon"><i class="fas fa-truck"></i></div>
-          <h3>Převezmeme</h3>
-          <p>váš vůz k realizaci vybrané služby</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">04</div>
-          <div class="process__step-icon"><i class="fas fa-hand-peace"></i></div>
-          <h3>Vyzvedněte</h3>
-          <p>si váš automobil</p>
-        </div>
-      </div>
-    </div>
-  </section>
+            <fieldset class="calc__group">
+              <legend class="calc__legend">2. Jaké máte auto?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="size" value="small" /><span>Malé / hatchback</span></label>
+                <label class="chip"><input type="radio" name="size" value="medium" checked /><span>Sedan / kombi</span></label>
+                <label class="chip"><input type="radio" name="size" value="large" /><span>SUV / velké</span></label>
+                <label class="chip"><input type="radio" name="size" value="van" /><span>Dodávka</span></label>
+              </div>
+            </fieldset>
 
-  <!-- ===== PPF SECTION ===== -->
-  <section class="ppf section">
-    <div class="container">
-      <div class="ppf__inner">
-        <div class="ppf__content">
-          <h2 class="section__title section__title--left">Ochrana vašeho vozu pomocí technologie PPF Fólie</h2>
-          <p>
-            PPF (Paint Protection Film) je transparentní polyuretanová fólie, která chrání lak vašeho vozu před kamínky, škrábanci, ptačím trusem, chemickými vlivy a UV zářením. Díky samouzdravovací technologii se drobné škrábance samy zacelí při zahřátí na slunci.
-          </p>
-          <ul class="ppf__benefits">
-            <li><i class="fas fa-check-circle"></i> Neviditelná ochrana – nenarušuje vzhled vozu</li>
-            <li><i class="fas fa-check-circle"></i> Samouzdravovací technologie</li>
-            <li><i class="fas fa-check-circle"></i> Ochrana před UV zářením a chemikáliemi</li>
-            <li><i class="fas fa-check-circle"></i> Dlouhá životnost až 10 let</li>
-            <li><i class="fas fa-check-circle"></i> Maximální čirost a lesk</li>
-          </ul>
-        </div>
-        <div class="ppf__stats">
-          <div class="ppf__stat">
-            <span class="ppf__stat-num">12</span>
-            <span class="ppf__stat-label">let zkušeností</span>
-          </div>
-          <div class="ppf__stat">
-            <span class="ppf__stat-num">1</span>
-            <span class="ppf__stat-label">pobočka v Praze</span>
-          </div>
-          <div class="ppf__stat">
-            <span class="ppf__stat-num counter" data-target="1500">0</span>
-            <span class="ppf__stat-label">úspěšných zakázek</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALERIE ===== -->
-  <section class="gallery section" id="galerie">
-    <div class="container">
-      <h2 class="section__title">Podívejte se na naše realizace</h2>
-      <p class="section__subtitle">Galerie</p>
-      <div class="gallery__grid">
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=600&q=80" alt="Celopolep automobilu" loading="lazy" />
-          <div class="gallery__overlay"><span>Celopolep</span></div>
-        </div>
-        <div class="gallery__item gallery__item--wide">
-          <img src="https://images.unsplash.com/photo-1615238359019-c8de4242e5c9?w=800&q=80" alt="Tónování skel" loading="lazy" />
-          <div class="gallery__overlay"><span>Tónování skel</span></div>
-        </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80" alt="Sportovní vůz s polepem" loading="lazy" />
-          <div class="gallery__overlay"><span>Reklamní polep</span></div>
-        </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&q=80" alt="Ochrana laku PPF" loading="lazy" />
-          <div class="gallery__overlay"><span>PPF ochrana</span></div>
-        </div>
-        <div class="gallery__item">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" alt="Luxusní vůz" loading="lazy" />
-          <div class="gallery__overlay"><span>Celopolep</span></div>
-        </div>
-        <div class="gallery__item gallery__item--wide">
-          <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80" alt="Tónování světel" loading="lazy" />
-          <div class="gallery__overlay"><span>Tónování světel</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== STATS ===== -->
-  <section class="stats section">
-    <div class="container">
-      <h2 class="section__title">AutoFolie Wrap v číslech</h2>
-      <div class="stats__grid">
-        <div class="stats__item">
-          <span class="stats__num counter" data-target="12">0</span>
-          <span class="stats__label">LET ZKUŠENOSTÍ</span>
-        </div>
-        <div class="stats__item">
-          <span class="stats__num">1</span>
-          <span class="stats__label">POBOČKA V PRAZE</span>
-        </div>
-        <div class="stats__item">
-          <span class="stats__num counter" data-target="1500">0</span>
-          <span class="stats__label">ÚSPĚŠNÝCH ZAKÁZEK</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== REFERENCE / TESTIMONIALS ===== -->
-  <section class="testimonials section">
-    <div class="container">
-      <h2 class="section__title">Reference</h2>
-      <p class="section__subtitle">Co o nás říkají zákazníci</p>
-      <div class="testimonials__slider" id="testimonialsSlider">
-        <div class="testimonials__track" id="testimonialsTrack">
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-card__text">Skvělá práce! Nechal jsem si tónovat skla a jsem maximálně spokojený. Profesionální přístup a krásný výsledek. Doporučuji všem!</p>
-            <div class="testimonial-card__author">
-              <span class="testimonial-card__name">Petr Novák</span>
-              <span class="testimonial-card__car">Škoda Octavia</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-card__text">Velmi ochotný personál, poradili mi s výběrem odstínu na celopolep. Auto vypadá úplně jinak – přesně jak jsem chtěl. Děkuji!</p>
-            <div class="testimonial-card__author">
-              <span class="testimonial-card__name">Lucie Svobodová</span>
-              <span class="testimonial-card__car">BMW 3 Series</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-card__text">Dal jsem si udělat PPF fólii na celé auto. Ochrana je naprosto neviditelná a klidně spím, i když parkuji venku. Doporučuji!</p>
-            <div class="testimonial-card__author">
-              <span class="testimonial-card__name">Martin Dvořák</span>
-              <span class="testimonial-card__car">Audi A6</span>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-card__stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-card__text">Reklamní polep na firemní vůz – rychlé jednání, precizní provedení. Reklama dělá parádu a už jsme díky tomu získali nové zákazníky!</p>
-            <div class="testimonial-card__author">
-              <span class="testimonial-card__name">Jan Procházka</span>
-              <span class="testimonial-card__car">Firemní dodávka</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__controls">
-          <button class="testimonials__btn testimonials__btn--prev" id="testPrev" aria-label="Předchozí"><i class="fas fa-chevron-left"></i></button>
-          <div class="testimonials__dots" id="testDots"></div>
-          <button class="testimonials__btn testimonials__btn--next" id="testNext" aria-label="Další"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CENÍK ===== -->
-  <section class="pricing section" id="cenik">
-    <div class="container">
-      <h2 class="section__title">Ceník</h2>
-      <p class="section__subtitle">Orientační ceny – přesná kalkulace na základě typu vozidla</p>
-      <div class="pricing__grid">
-        <div class="pricing__card">
-          <h3>Tónování skel</h3>
-          <p class="pricing__price">od 3 500 Kč</p>
-          <ul>
-            <li>Osobní vozy</li>
-            <li>Boční skla + zadní okno</li>
-            <li>UV ochrana 99%</li>
-            <li>Záruka na fólii</li>
-          </ul>
-          <a href="#kontakt" class="pricing__btn">Poptat</a>
-        </div>
-        <div class="pricing__card pricing__card--featured">
-          <h3>Celopolep</h3>
-          <p class="pricing__price">od 18 000 Kč</p>
-          <ul>
-            <li>Změna barvy vozu</li>
-            <li>Ochrana laku</li>
-            <li>Individuální návrh</li>
-            <li>Záruka až 5 let</li>
-          </ul>
-          <a href="#kontakt" class="pricing__btn">Poptat</a>
-        </div>
-        <div class="pricing__card">
-          <h3>PPF ochrana</h3>
-          <p class="pricing__price">od 8 000 Kč</p>
-          <ul>
-            <li>Čelní část vozidla</li>
-            <li>Celý automobil</li>
-            <li>Samouzdravovací fólie</li>
-            <li>Záruka až 10 let</li>
-          </ul>
-          <a href="#kontakt" class="pricing__btn">Poptat</a>
-        </div>
-        <div class="pricing__card">
-          <h3>Reklamní polep</h3>
-          <p class="pricing__price">od 4 500 Kč</p>
-          <ul>
-            <li>Návrh zdarma</li>
-            <li>Částečný i celoplošný</li>
-            <li>Firemní flotily</li>
-            <li>Rychlá realizace</li>
-          </ul>
-          <a href="#kontakt" class="pricing__btn">Poptat</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== KONTAKT ===== -->
-  <section class="contact section" id="kontakt">
-    <div class="container">
-      <h2 class="section__title">Objednejte se k nám ještě dnes</h2>
-      <div class="contact__phones">
-        <a href="tel:+420777599995"><i class="fas fa-phone-alt"></i> +420 777 599 995</a>
-        <a href="tel:+420777699996"><i class="fas fa-phone-alt"></i> +420 777 699 996</a>
-      </div>
-      <div class="contact__inner">
-        <div class="contact__form-wrapper">
-          <h3>Napište nám</h3>
-          <form class="contact__form" id="contactForm">
-            <div class="form__group">
-              <input type="text" id="name" name="name" placeholder="Vaše jméno" required />
-            </div>
-            <div class="form__group">
-              <input type="email" id="email" name="email" placeholder="Váš e-mail" required />
-            </div>
-            <div class="form__group">
-              <input type="tel" id="phone" name="phone" placeholder="Váš telefon" />
-            </div>
-            <div class="form__group">
-              <textarea id="message" name="message" rows="5" placeholder="Vaše zpráva" required></textarea>
-            </div>
-            <button type="submit" class="form__btn">Odeslat zprávu</button>
+            <fieldset class="calc__group">
+              <legend class="calc__legend">3. Chcete něco navíc? <span class="calc__optional">(nepovinné)</span></legend>
+              <div class="chips chips--check">
+                <label class="chip"><input type="checkbox" name="extra" value="lights" /><span>Tónování světel <b>+1 500 Kč</b></span></label>
+                <label class="chip"><input type="checkbox" name="extra" value="roof" /><span>Střecha v černé <b>+3 500 Kč</b></span></label>
+                <label class="chip"><input type="checkbox" name="extra" value="details" /><span>Kliky a zrcátka <b>+2 500 Kč</b></span></label>
+                <label class="chip"><input type="checkbox" name="extra" value="removal" /><span>Sejmutí staré fólie <b>+3 000 Kč</b></span></label>
+              </div>
+            </fieldset>
           </form>
+
+          <aside class="calc__result" aria-labelledby="calcResultTitle">
+            <h3 class="calc__result-title" id="calcResultTitle">Váš odhad</h3>
+            <p class="calc__amount" id="calcAmount" aria-live="polite">
+              <span id="calcLow">3 500</span> – <span id="calcHigh">4 100</span> <span class="calc__cur">Kč</span>
+            </p>
+            <p class="calc__note">Cena včetně materiálu i práce. DPH neúčtujeme zvlášť — vidíte konečnou částku.</p>
+
+            <dl class="calc__summary" id="calcSummary">
+              <div><dt>Služba</dt><dd id="sumService">Tónování skel</dd></div>
+              <div><dt>Vozidlo</dt><dd id="sumSize">Sedan / kombi</dd></div>
+              <div><dt>Doplňky</dt><dd id="sumExtras">žádné</dd></div>
+              <div><dt>Odhad realizace</dt><dd id="sumTime">1 den</dd></div>
+            </dl>
+
+            <button class="btn btn--primary btn--block" type="button" id="calcSend">
+              Poslat tuto poptávku
+              <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+            <p class="calc__disclaimer">Odhad je orientační. Konečnou cenu ovlivňuje stav laku, tvar karoserie a zvolená fólie.</p>
+          </aside>
         </div>
-        <div class="contact__info">
-          <div class="contact__info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <strong>Kde nás najdete</strong>
-              <span>Praha (po domluvě)</span>
-            </div>
+      </div>
+    </section>
+
+    <!-- ===== PRŮVODCE FÓLIEMI ===== -->
+    <section class="section" id="folie">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Poradíme s výběrem</p>
+          <h2 class="section__title">Jaký povrch vám sedne?</h2>
+          <p class="section__lead">Nejčastější otázka v dílně. Klikněte na povrch a zjistěte, jak vypadá, co obnáší údržba a jak ovlivní cenu.</p>
+        </header>
+
+        <div class="finish">
+          <div class="finish__picker" role="tablist" aria-label="Typy povrchu fólie">
+            <button class="finish__tab is-active" type="button" role="tab" id="tab-gloss" aria-selected="true" aria-controls="panel-gloss" data-finish="gloss">
+              <span class="finish__swatch finish__swatch--gloss" aria-hidden="true"></span> Lesk
+            </button>
+            <button class="finish__tab" type="button" role="tab" id="tab-matte" aria-selected="false" aria-controls="panel-matte" tabindex="-1" data-finish="matte">
+              <span class="finish__swatch finish__swatch--matte" aria-hidden="true"></span> Mat
+            </button>
+            <button class="finish__tab" type="button" role="tab" id="tab-satin" aria-selected="false" aria-controls="panel-satin" tabindex="-1" data-finish="satin">
+              <span class="finish__swatch finish__swatch--satin" aria-hidden="true"></span> Satén
+            </button>
+            <button class="finish__tab" type="button" role="tab" id="tab-metallic" aria-selected="false" aria-controls="panel-metallic" tabindex="-1" data-finish="metallic">
+              <span class="finish__swatch finish__swatch--metallic" aria-hidden="true"></span> Metalíza
+            </button>
+            <button class="finish__tab" type="button" role="tab" id="tab-chrome" aria-selected="false" aria-controls="panel-chrome" tabindex="-1" data-finish="chrome">
+              <span class="finish__swatch finish__swatch--chrome" aria-hidden="true"></span> Chrom
+            </button>
+            <button class="finish__tab" type="button" role="tab" id="tab-carbon" aria-selected="false" aria-controls="panel-carbon" tabindex="-1" data-finish="carbon">
+              <span class="finish__swatch finish__swatch--carbon" aria-hidden="true"></span> Karbon
+            </button>
           </div>
-          <div class="contact__info-item">
-            <i class="fas fa-clock"></i>
-            <div>
-              <strong>Provozní doba</strong>
-              <span>Po–Pá: 8:00–18:00</span>
-              <span>So: po domluvě</span>
+
+          <div class="finish__panels">
+            <div class="finish__panel" role="tabpanel" id="panel-gloss" aria-labelledby="tab-gloss">
+              <div class="finish__preview finish__preview--gloss" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Lesk</h3>
+                <p>Nejblíž originálnímu laku. Vypadá jako čerstvě naleštěné auto a odpouští nejvíc chyb při mytí — proto ho volí většina zákazníků.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Nenáročná</dd></div>
+                  <div><dt>Životnost</dt><dd>5–7 let</dd></div>
+                  <div><dt>Cena</dt><dd>Základ</dd></div>
+                </dl>
+              </div>
             </div>
-          </div>
-          <div class="contact__info-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <strong>E-mail</strong>
-              <a href="mailto:info@autofoliewrap.cz">info@autofoliewrap.cz</a>
+
+            <div class="finish__panel" role="tabpanel" id="panel-matte" aria-labelledby="tab-matte" hidden>
+              <div class="finish__preview finish__preview--matte" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Mat</h3>
+                <p>Hluboký, neodrážející povrch. Na ulici si ho všimne každý. Vyžaduje ale ruční mytí a speciální šampon — kartáčová myčka mu nesvědčí.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Náročnější</dd></div>
+                  <div><dt>Životnost</dt><dd>4–6 let</dd></div>
+                  <div><dt>Cena</dt><dd>+ 10 %</dd></div>
+                </dl>
+              </div>
             </div>
-          </div>
-          <div class="contact__info-item">
-            <i class="fas fa-globe"></i>
-            <div>
-              <strong>Sledujte nás</strong>
-              <div class="contact__social">
-                <a href="https://www.facebook.com/Autofoliewrapcz" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/autofolie.wrap.praha/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <div class="finish__panel" role="tabpanel" id="panel-satin" aria-labelledby="tab-satin" hidden>
+              <div class="finish__preview finish__preview--satin" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Satén</h3>
+                <p>Zlatá střední cesta mezi leskem a matem. Jemné hedvábné odlesky zvýrazní tvary karoserie, aniž by auto působilo křiklavě.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Střední</dd></div>
+                  <div><dt>Životnost</dt><dd>5–7 let</dd></div>
+                  <div><dt>Cena</dt><dd>+ 10 %</dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="finish__panel" role="tabpanel" id="panel-metallic" aria-labelledby="tab-metallic" hidden>
+              <div class="finish__preview finish__preview--metallic" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Metalíza</h3>
+                <p>Jemné kovové částice v fólii mění odstín podle úhlu světla. Efekt, který na fotce nikdy nevynikne tak jako naživo.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Nenáročná</dd></div>
+                  <div><dt>Životnost</dt><dd>5–7 let</dd></div>
+                  <div><dt>Cena</dt><dd>+ 15 %</dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="finish__panel" role="tabpanel" id="panel-chrome" aria-labelledby="tab-chrome" hidden>
+              <div class="finish__preview finish__preview--chrome" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Chrom</h3>
+                <p>Zrcadlo na kolech. Nejnáročnější aplikace i údržba, zato absolutně nepřehlédnutelné. Často volíme jen na části vozu — střecha, zrcátka, detaily.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Náročná</dd></div>
+                  <div><dt>Životnost</dt><dd>3–5 let</dd></div>
+                  <div><dt>Cena</dt><dd>+ 40 %</dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="finish__panel" role="tabpanel" id="panel-carbon" aria-labelledby="tab-carbon" hidden>
+              <div class="finish__preview finish__preview--carbon" aria-hidden="true"></div>
+              <div class="finish__body">
+                <h3>Karbon</h3>
+                <p>Strukturovaná 3D/4D fólie s tkaninovým reliéfem. Skvěle funguje na střechu, kapotu, spoiler nebo interiérové lišty.</p>
+                <dl class="finish__specs">
+                  <div><dt>Údržba</dt><dd>Střední</dd></div>
+                  <div><dt>Životnost</dt><dd>4–6 let</dd></div>
+                  <div><dt>Cena</dt><dd>+ 20 %</dd></div>
+                </dl>
               </div>
             </div>
           </div>
         </div>
+        <p class="finish__note">Vzorníky jsou ilustrativní. V dílně vám ukážeme skutečné vzorky fólií na vašem voze a při vašem světle.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="logo">Autofolie<span>wrap</span>.cz</a>
-        <p>Profesionální polepy karoserií a tónování oken v Praze. Jsme s vámi od roku 2009.</p>
+    <!-- ===== POSTUP ===== -->
+    <section class="section section--dark" id="postup">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--light">Od objednávky po vyzvednutí</p>
+          <h2 class="section__title">Jak to u nás probíhá</h2>
+          <p class="section__lead">Žádná překvapení. Přesně víte, co se s vaším autem děje a kdy ho dostanete zpátky.</p>
+        </header>
+
+        <ol class="steps" role="list">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+            <h3>Ozvěte se</h3>
+            <p>Telefonicky, přes formulář nebo na WhatsAppu. Stačí typ vozu a co po fólii chcete.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-chat"></use></svg></span>
+            <h3>Poradíme a naceníme</h3>
+            <p>Doporučíme fólii i odstín, pošleme pevnou cenu a domluvíme termín.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-truck"></use></svg></span>
+            <h3>Převezmeme vůz</h3>
+            <p>Auto rozebereme, připravíme povrch a fólii aplikujeme v čisté dílně.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-key"></use></svg></span>
+            <h3>Vyzvednete si ho</h3>
+            <p>Společně projdeme výsledek a předáme vám pokyny k údržbě i záruku.</p>
+          </li>
+        </ol>
       </div>
-      <div class="footer__nav">
-        <h4>Navigace</h4>
-        <ul>
-          <li><a href="#home">Domů</a></li>
-          <li><a href="#sluzby">Služby</a></li>
-          <li><a href="#cenik">Ceník</a></li>
-          <li><a href="#galerie">Galerie</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+    </section>
+
+    <!-- ===== O NÁS + ČÍSLA ===== -->
+    <section class="section" id="o-nas">
+      <div class="wrap about">
+        <div class="about__text">
+          <p class="eyebrow">Kdo za tím stojí</p>
+          <h2 class="section__title section__title--start">Malá dílna, velká péče o detail</h2>
+          <p>
+            Polepům karoserií a tónování oken se věnujeme od roku 2013. Za tu dobu jsme si vybrali
+            hrstku fólií, kterým věříme — na skla SunTek řady HP a Fusion HP, na karoserie 3M, Hexis,
+            Avery Dennison, Oracal a KPMF.
+          </p>
+          <p>
+            Nejsme řetězec. Každou zakázku dělá ten samý člověk od demontáže po předání, takže víte,
+            koho se ptát, a my víme, co jsme kde udělali. Polepíme celou karoserii i jediný díl,
+            ztónujeme skla i světla, uděláme bezpečnostní i reklamní polep.
+          </p>
+          <p>
+            Nesliboujeme zázraky přes noc. Slibujeme, že vám řekneme dopředu, co má smysl,
+            co ne, a kolik to bude stát.
+          </p>
+          <a class="btn btn--outline" href="#kontakt">Domluvit prohlídku vozu <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        </div>
+
+        <ul class="stats" role="list">
+          <li class="stat">
+            <span class="stat__num"><span class="counter" data-target="12">12</span>+</span>
+            <span class="stat__label">let zkušeností</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num"><span class="counter" data-target="1500">1500</span>+</span>
+            <span class="stat__label">dokončených zakázek</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num"><span class="counter" data-target="7">7</span></span>
+            <span class="stat__label">značek fólií v nabídce</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num">10</span>
+            <span class="stat__label">let záruka na PPF</span>
+          </li>
         </ul>
       </div>
-      <div class="footer__contact">
-        <h4>Kontakt</h4>
-        <a href="tel:+420777599995">+420 777 599 995</a>
-        <a href="tel:+420777699996">+420 777 699 996</a>
-        <a href="mailto:info@autofoliewrap.cz">info@autofoliewrap.cz</a>
+    </section>
+
+    <!-- ===== GALERIE ===== -->
+    <section class="section section--tint" id="galerie">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Realizace</p>
+          <h2 class="section__title">Podívejte se, co jsme dělali</h2>
+          <p class="section__lead">Vyfiltrujte si, co vás zajímá. Kliknutím obrázek zvětšíte.</p>
+        </header>
+
+        <div class="filters" id="galleryFilters" role="group" aria-label="Filtrovat galerii">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Vše</button>
+          <button class="filter" type="button" data-filter="wrap" aria-pressed="false">Celopolepy</button>
+          <button class="filter" type="button" data-filter="tint" aria-pressed="false">Tónování</button>
+          <button class="filter" type="button" data-filter="ppf" aria-pressed="false">PPF</button>
+          <button class="filter" type="button" data-filter="ad" aria-pressed="false">Reklama</button>
+        </div>
+
+        <!-- Ukázkové fotky: stock snímky slouží jako placeholder.
+             Nahraďte je vlastními realizacemi — stačí vyměnit src/data-full/alt. -->
+        <ul class="gallery" id="gallery" role="list">
+          <li class="gallery__item gallery__item--wide" data-cat="wrap">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600&q=85" data-caption="Celopolep v saténovém odstínu">
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&q=80" alt="Kupé v saténově šedém celopolepu" width="1200" height="675" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Celopolep</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="wrap">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1600&q=85" data-caption="Celopolep osobního vozu">
+              <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&q=80" alt="Vůz po celopolepu v tmavém odstínu" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Celopolep</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="tint">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=1600&q=85" data-caption="Tónování bočních skel">
+              <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=80" alt="Hatchback s tónovanými bočními skly" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Tónování</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="ppf">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1600&q=85" data-caption="PPF ochrana přední partie">
+              <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80" alt="Přední partie vozu chráněná PPF fólií" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">PPF ochrana</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="wrap">
+            <button class="gallery__btn" type="button" data-full="assets/frames/car_1.webp" data-caption="Příprava vozu v naší dílně — demontáž dílů před aplikací fólie">
+              <img src="assets/frames/car_1.webp" alt="Rozebraný vůz v dílně připravený na aplikaci fólie" width="800" height="450" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Z naší dílny</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="ad">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=85" data-caption="Sportovní vůz s reklamním polepem">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80" alt="Sportovní vůz s polepem karoserie" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Reklamní polep</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item gallery__item--wide" data-cat="wrap">
+            <button class="gallery__btn" type="button" data-full="assets/frames/car_60.webp" data-caption="Detail práce na přední partii vozu">
+              <img src="assets/frames/car_60.webp" alt="Technik pracuje na přední partii černého vozu" width="1200" height="675" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Z naší dílny</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="tint">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=1600&q=85" data-caption="Tónování zadních světel">
+              <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80" alt="Zatmavená zadní světla vozu" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">Tónování</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+          <li class="gallery__item" data-cat="ppf">
+            <button class="gallery__btn" type="button" data-full="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=85" data-caption="Luxusní vůz s ochranou laku">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Luxusní vůz s naleštěnou karoserií" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="gallery__tag">PPF ochrana</span>
+              <span class="gallery__zoom" aria-hidden="true"><svg><use href="#i-expand"></use></svg></span>
+            </button>
+          </li>
+        </ul>
+        <p class="gallery__empty" id="galleryEmpty" hidden>V této kategorii zatím nic nemáme — zkuste jiný filtr.</p>
+      </div>
+    </section>
+
+    <!-- ===== REFERENCE ===== -->
+    <section class="section" id="reference">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Reference</p>
+          <h2 class="section__title">Co říkají zákazníci</h2>
+        </header>
+
+        <div class="quotes" id="quotes">
+          <ul class="quotes__track" id="quotesTrack" role="list">
+            <li class="quote">
+              <span class="quote__mark" aria-hidden="true"><svg><use href="#i-quote"></use></svg></span>
+              <p class="quote__stars" aria-label="Hodnocení 5 z 5">
+                <svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg>
+              </p>
+              <blockquote><p>Skvělá práce! Nechal jsem si tónovat skla a jsem maximálně spokojený. Profesionální přístup a krásný výsledek. Doporučuji všem!</p></blockquote>
+              <footer class="quote__by"><span class="quote__avatar" aria-hidden="true">PN</span><span><b>Petr Novák</b><i>Škoda Octavia</i></span></footer>
+            </li>
+            <li class="quote">
+              <span class="quote__mark" aria-hidden="true"><svg><use href="#i-quote"></use></svg></span>
+              <p class="quote__stars" aria-label="Hodnocení 5 z 5">
+                <svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg>
+              </p>
+              <blockquote><p>Velmi ochotný personál, poradili mi s výběrem odstínu na celopolep. Auto vypadá úplně jinak — přesně jak jsem chtěl. Děkuji!</p></blockquote>
+              <footer class="quote__by"><span class="quote__avatar" aria-hidden="true">LS</span><span><b>Lucie Svobodová</b><i>BMW řady 3</i></span></footer>
+            </li>
+            <li class="quote">
+              <span class="quote__mark" aria-hidden="true"><svg><use href="#i-quote"></use></svg></span>
+              <p class="quote__stars" aria-label="Hodnocení 5 z 5">
+                <svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg>
+              </p>
+              <blockquote><p>Dal jsem si udělat PPF fólii na celé auto. Ochrana je naprosto neviditelná a klidně spím, i když parkuji venku. Doporučuji!</p></blockquote>
+              <footer class="quote__by"><span class="quote__avatar" aria-hidden="true">MD</span><span><b>Martin Dvořák</b><i>Audi A6</i></span></footer>
+            </li>
+            <li class="quote">
+              <span class="quote__mark" aria-hidden="true"><svg><use href="#i-quote"></use></svg></span>
+              <p class="quote__stars" aria-label="Hodnocení 5 z 5">
+                <svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg>
+              </p>
+              <blockquote><p>Reklamní polep na firemní vůz — rychlé jednání, precizní provedení. Reklama dělá parádu a už jsme díky tomu získali nové zákazníky!</p></blockquote>
+              <footer class="quote__by"><span class="quote__avatar" aria-hidden="true">JP</span><span><b>Jan Procházka</b><i>Firemní dodávka</i></span></footer>
+            </li>
+          </ul>
+
+          <div class="quotes__controls">
+            <button class="iconbtn" type="button" id="quotePrev"><svg aria-hidden="true"><use href="#i-chevron-left"></use></svg><span class="visually-hidden">Předchozí reference</span></button>
+            <div class="quotes__dots" id="quoteDots"></div>
+            <button class="iconbtn" type="button" id="quoteNext"><svg aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="visually-hidden">Další reference</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CENÍK ===== -->
+    <section class="section section--tint" id="cenik">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Transparentně</p>
+          <h2 class="section__title">Ceník</h2>
+          <p class="section__lead">Orientační ceny pro běžný sedan. Přesnou kalkulaci uděláme podle typu vozidla a zvolené fólie.</p>
+        </header>
+
+        <div class="prices">
+          <article class="price reveal">
+            <h3 class="price__name">Tónování skel</h3>
+            <p class="price__value">od 3 500 <span>Kč</span></p>
+            <ul class="price__list" role="list">
+              <li>Boční skla + zadní okno</li>
+              <li>UV ochrana až 99 %</li>
+              <li>Odstíny dle limitů STK</li>
+              <li>Hotovo za 1 den</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="#kalkulacka">Spočítat cenu</a>
+          </article>
+
+          <article class="price price--featured reveal">
+            <p class="price__badge">Nejčastější volba</p>
+            <h3 class="price__name">Celopolep</h3>
+            <p class="price__value">od 18 000 <span>Kč</span></p>
+            <ul class="price__list" role="list">
+              <li>Změna barvy bez laku</li>
+              <li>Ochrana původního laku</li>
+              <li>Výběr povrchu a odstínu</li>
+              <li>Záruka až 5 let</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#kalkulacka">Spočítat cenu</a>
+          </article>
+
+          <article class="price reveal">
+            <h3 class="price__name">PPF ochrana</h3>
+            <p class="price__value">od 8 000 <span>Kč</span></p>
+            <ul class="price__list" role="list">
+              <li>Přední partie nebo celý vůz</li>
+              <li>Samouzdravovací fólie</li>
+              <li>Neviditelná ochrana</li>
+              <li>Záruka až 10 let</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="#kalkulacka">Spočítat cenu</a>
+          </article>
+
+          <article class="price reveal">
+            <h3 class="price__name">Reklamní polep</h3>
+            <p class="price__value">od 4 500 <span>Kč</span></p>
+            <ul class="price__list" role="list">
+              <li>Grafický návrh zdarma</li>
+              <li>Částečný i celoplošný</li>
+              <li>Sleva pro flotily</li>
+              <li>Rychlá realizace</li>
+            </ul>
+            <a class="btn btn--outline btn--block" href="#kalkulacka">Spočítat cenu</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="wrap wrap--narrow">
+        <header class="section__head">
+          <p class="eyebrow">Než se rozhodnete</p>
+          <h2 class="section__title">Časté dotazy</h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item" name="faq" open>
+            <summary>Jak dlouho realizace trvá?</summary>
+            <div class="faq__answer">
+              <p>Tónování skel zvládneme během jednoho dne. Celopolep obvykle trvá 3 až 5 pracovních dnů, PPF na přední partie 1 až 2 dny. Přesný termín potvrdíme při objednávce, ať víte, kdy s autem počítat.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Poškodí fólie lak vozu?</summary>
+            <div class="faq__answer">
+              <p>Ne. Kvalitní fólie lak naopak chrání před kamínky, UV zářením a drobnými škrábanci. Při odborné aplikaci i pozdějším sejmutí zůstane originální lak nedotčený — to je ostatně jeden z hlavních důvodů, proč lidé fólii volí místo přestřiku.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Jde fólie později sundat?</summary>
+            <div class="faq__answer">
+              <p>Ano, fólie je plně odstranitelná. Sejmutí provádíme řízeným nahřátím, aby na laku nezůstala lepidla ani stopy. Vůz se tak vrátí do původní barvy — praktické třeba před prodejem.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Můžu s polepeným autem do myčky?</summary>
+            <div class="faq__answer">
+              <p>Ano. Doporučujeme ruční mytí nebo bezkontaktní myčku. Kartáčovým myčkám se u matných a saténových fólií raději vyhněte — kartáče na nich časem zanechají lesklé šmouhy. Při předání vám dáme jednoduchý návod k údržbě.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Je tónování autoskel legální?</summary>
+            <div class="faq__answer">
+              <p>Ano. Skla za B sloupkem lze tónovat bez omezení. Přední boční skla a čelní sklo podléhají limitům propustnosti světla. Poradíme vám s variantou, která projde technickou kontrolou, a nikdy vám nenabídneme něco, co by vám na STK zavařilo.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Jakou dáváte záruku?</summary>
+            <div class="faq__answer">
+              <p>Na práci i materiál poskytujeme záruku podle typu fólie — u celopolepů až 5 let, u PPF fólií až 10 let. Záruka se vztahuje na odlepování, praskání i barevnou stálost.</p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Kolik to bude stát u mého auta?</summary>
+            <div class="faq__answer">
+              <p>Nejrychleji to zjistíte v <a href="#kalkulacka">orientační kalkulačce</a> — nastavíte službu a typ vozu a hned vidíte rozpětí. Pevnou cenu potvrdíme po krátké prohlídce vozu, kdy zkontrolujeme stav laku a tvary karoserie.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAKT ===== -->
+    <section class="section section--dark" id="kontakt">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--light">Kontakt</p>
+          <h2 class="section__title">Objednejte se ještě dnes</h2>
+          <p class="section__lead">Napište nám, co potřebujete. Ozveme se zpravidla do několika hodin v pracovní době.</p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__formbox">
+            <form class="form" id="contactForm" action="#" method="post" novalidate>
+              <div class="field">
+                <label for="f-name">Jméno <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required enterkeyhint="next" />
+                <p class="field__error" data-error-for="f-name"></p>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-email">E-mail <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required enterkeyhint="next" />
+                  <p class="field__error" data-error-for="f-email"></p>
+                </div>
+                <div class="field">
+                  <label for="f-phone">Telefon</label>
+                  <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="next" />
+                  <p class="field__error" data-error-for="f-phone"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="f-car">Vozidlo <span class="field__hint" id="car-hint">značka, model, rok</span></label>
+                <input id="f-car" name="car" type="text" aria-describedby="car-hint" enterkeyhint="next" placeholder="např. Škoda Octavia 2021" />
+              </div>
+
+              <div class="field">
+                <label for="f-message">Zpráva <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="f-message" name="message" rows="5" required placeholder="Co byste rádi na voze udělali?"></textarea>
+                <p class="field__error" data-error-for="f-message"></p>
+              </div>
+
+              <!-- honeypot: skryté pole proti spamu -->
+              <div class="hp" aria-hidden="true">
+                <label for="f-website">Nevyplňujte</label>
+                <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button class="btn btn--primary btn--lg btn--block" type="submit" id="formSubmit">
+                Odeslat poptávku
+                <svg aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+              </button>
+              <p class="form__status" id="formStatus" role="status"></p>
+              <p class="form__legal">Odesláním souhlasíte se zpracováním údajů za účelem vyřízení poptávky.</p>
+            </form>
+          </div>
+
+          <div class="contact__info">
+            <a class="infocard infocard--action" href="tel:+420777599995">
+              <span class="infocard__icon"><svg aria-hidden="true"><use href="#i-phone"></use></svg></span>
+              <span class="infocard__body">
+                <b>+420 777 599 995</b>
+                <i>Zavolejte nám</i>
+              </span>
+            </a>
+            <a class="infocard infocard--action" href="tel:+420777699996">
+              <span class="infocard__icon"><svg aria-hidden="true"><use href="#i-phone"></use></svg></span>
+              <span class="infocard__body">
+                <b>+420 777 699 996</b>
+                <i>Druhá linka</i>
+              </span>
+            </a>
+            <a class="infocard infocard--action" href="mailto:info@autofoliewrap.cz">
+              <span class="infocard__icon"><svg aria-hidden="true"><use href="#i-mail"></use></svg></span>
+              <span class="infocard__body">
+                <b>info@autofoliewrap.cz</b>
+                <i>Napište e-mail</i>
+              </span>
+            </a>
+            <div class="infocard">
+              <span class="infocard__icon"><svg aria-hidden="true"><use href="#i-pin"></use></svg></span>
+              <span class="infocard__body">
+                <b>Praha</b>
+                <i>Přesnou adresu dílny pošleme při domluvě termínu</i>
+              </span>
+            </div>
+            <div class="infocard">
+              <span class="infocard__icon"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+              <span class="infocard__body">
+                <b>Po–Pá 8:00–18:00</b>
+                <i>Sobota po domluvě</i>
+              </span>
+            </div>
+            <div class="socials">
+              <a href="https://www.facebook.com/Autofoliewrapcz" target="_blank" rel="noopener noreferrer" aria-label="Facebook (otevře se v novém okně)"><svg aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+              <a href="https://www.instagram.com/autofolie.wrap.praha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (otevře se v novém okně)"><svg aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+              <a href="https://wa.me/420777599995" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (otevře se v novém okně)"><svg aria-hidden="true"><use href="#i-whatsapp"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <div class="site-footer__brand">
+        <a href="#top" class="logo">
+          <span class="logo__mark" aria-hidden="true"><svg><use href="#i-layers"></use></svg></span>
+          <span class="logo__text">Autofolie<b>wrap</b><i>.cz</i></span>
+        </a>
+        <p>Polepy karoserií, PPF ochrana laku a tónování autoskel v Praze. S vámi od roku 2013.</p>
+        <div class="socials socials--sm">
+          <a href="https://www.facebook.com/Autofoliewrapcz" target="_blank" rel="noopener noreferrer" aria-label="Facebook (otevře se v novém okně)"><svg aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+          <a href="https://www.instagram.com/autofolie.wrap.praha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (otevře se v novém okně)"><svg aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+        </div>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Služby">
+        <h2>Služby</h2>
+        <ul role="list">
+          <li><a href="#tonovani">Tónování autoskel</a></li>
+          <li><a href="#celopolepy">Celopolepy</a></li>
+          <li><a href="#ppf">PPF ochrana laku</a></li>
+          <li><a href="#reklama">Reklamní polepy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__col" aria-label="Web">
+        <h2>Web</h2>
+        <ul role="list">
+          <li><a href="#kalkulacka">Kalkulačka ceny</a></li>
+          <li><a href="#folie">Průvodce fóliemi</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#cenik">Ceník</a></li>
+          <li><a href="#faq">Časté dotazy</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2>Kontakt</h2>
+        <ul role="list">
+          <li><a href="tel:+420777599995">+420 777 599 995</a></li>
+          <li><a href="tel:+420777699996">+420 777 699 996</a></li>
+          <li><a href="mailto:info@autofoliewrap.cz">info@autofoliewrap.cz</a></li>
+          <li>Po–Pá 8:00–18:00</li>
+        </ul>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p>&copy; 2024 autofoliewrap.cz, Všechna práva vyhrazena</p>
-        <p class="footer__credit">Stránky vytvořilo <a href="https://www.aivision.cz" target="_blank">studio AiVision</a></p>
-      </div>
+
+    <div class="wrap site-footer__bottom">
+      <p>&copy; <span id="year">2026</span> autofoliewrap.cz — všechna práva vyhrazena</p>
+      <p>Stránky vytvořilo <a href="https://www.aivision.cz" target="_blank" rel="noopener noreferrer">studio AiVision</a></p>
     </div>
   </footer>
 
-  <!-- ===== COOKIE BANNER ===== -->
-  <div class="cookie-banner" id="cookieBanner">
-    <p>Tento web používá cookies pro zlepšení uživatelského zážitku. Pokračováním souhlasíte s jejich používáním.</p>
-    <div class="cookie-banner__btns">
-      <button class="cookie-banner__btn" id="cookieAccept">Souhlasím</button>
-      <button class="cookie-banner__btn cookie-banner__btn--secondary" id="cookieDecline">Odmítnout</button>
-    </div>
+  <!-- ===== STICKY MOBILE ACTION BAR ===== -->
+  <div class="actionbar">
+    <a class="actionbar__btn" href="tel:+420777599995">
+      <svg aria-hidden="true"><use href="#i-phone"></use></svg>Zavolat
+    </a>
+    <a class="actionbar__btn" href="https://wa.me/420777599995" target="_blank" rel="noopener noreferrer">
+      <svg aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp
+    </a>
+    <a class="actionbar__btn actionbar__btn--primary" href="#kalkulacka">
+      <svg aria-hidden="true"><use href="#i-calculator"></use></svg>Spočítat
+    </a>
   </div>
 
   <!-- ===== SCROLL TO TOP ===== -->
-  <button class="scroll-top" id="scrollTop" aria-label="Nahoru">
-    <i class="fas fa-chevron-up"></i>
+  <button class="totop" id="toTop" type="button">
+    <svg aria-hidden="true"><use href="#i-arrow-up"></use></svg>
+    <span class="visually-hidden">Zpět nahoru</span>
   </button>
 
-  <!-- GSAP + ScrollTrigger (ES modules via CDN) -->
-  <script type="importmap">
-  {
-    "imports": {
-      "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm",
-      "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.js"
-    }
-  }
-  </script>
-  <script type="module" src="js/scroll-effect.js"></script>
-  <script src="js/main.js"></script>
+  <!-- ===== LIGHTBOX ===== -->
+  <dialog class="lightbox" id="lightbox" closedby="any" aria-label="Zvětšený obrázek">
+    <button class="lightbox__close" type="button" id="lightboxClose">
+      <svg aria-hidden="true"><use href="#i-close"></use></svg><span class="visually-hidden">Zavřít</span>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" id="lightboxPrev">
+      <svg aria-hidden="true"><use href="#i-chevron-left"></use></svg><span class="visually-hidden">Předchozí obrázek</span>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImg" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" id="lightboxNext">
+      <svg aria-hidden="true"><use href="#i-chevron-right"></use></svg><span class="visually-hidden">Další obrázek</span>
+    </button>
+  </dialog>
+
+  <!-- ===== COOKIE NOTICE ===== -->
+  <div class="cookie" id="cookie" hidden>
+    <h2 class="cookie__title">Cookies</h2>
+    <p>Používáme jen to nutné pro chod webu. Statistiky nám pomáhají web zlepšovat — a jen s vaším souhlasem.</p>
+    <div class="cookie__btns">
+      <button class="btn btn--primary btn--sm" type="button" id="cookieAccept">Souhlasím</button>
+      <button class="btn btn--ghost btn--sm" type="button" id="cookieDecline">Jen nezbytné</button>
+    </div>
+  </div>
+
+  <script src="js/main.js" type="module"></script>
+  <script src="js/scroll-effect.js" type="module"></script>
 </body>
 </html>

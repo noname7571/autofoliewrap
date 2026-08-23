@@ -6,5 +6,15 @@
   },
   "dependencies": {
     "sharp": "^0.35.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "frames": "node scripts/generate-frames.mjs",
+    "serve": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
   }
 }
