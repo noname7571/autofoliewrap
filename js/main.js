@@ -108,7 +108,7 @@ function initNav() {
         }
     });
     // Leaving the mobile breakpoint should never leave the page stuck in "open".
-    const wide = window.matchMedia('(width > 52rem)');
+    const wide = window.matchMedia('(width > 60rem)'); // keep in sync with the CSS breakpoint
     wide.addEventListener('change', (e) => {
         if (e.matches && isOpen())
             setOpen(false);
